@@ -7,6 +7,10 @@
    --logo-color-studio:#000000;
 }
 
+.list {
+    list-style: none;
+    text-decoration: none;
+}
  /* Логотип */
 .logo {
     color: var(--logo-color-studio);
@@ -20,13 +24,9 @@
     color: var(--logo-color-web);
 }
 
-/* ccылки */
-.link {
-    text-decoration: none;
-    list-style: none;
-}
  /* хеадер разделы */
-.site-navication {
+.top-link {
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -41,31 +41,39 @@
 }
 
 /* изменение цвета хеадер разделы  */
-.page-shapka .link:hover,
-.page-shapka .link:focus {
+.top-link:hover,
+.top-link:active {
  color: var(--logo-color-web);
 }
 
-.page-shapka .link .current {
+.top-link.current {
+    color: var(--logo-color-web);
+}
+
+.contacts-link:hover,
+.contacts-link:active{
+ color: var(--logo-color-web);
+}
+
+.contacts-link .current {
     color: var(--logo-color-web);
 }
 
 /* хеадер почта/телефон */
-.list-navication {
+.contacts-link {
  color: var(--text-color);
  font-weight: 500;
  font-size: 14px;
  line-height: 1.14;
  list-style: none;
  text-decoration: none;
+
 }
  
 /* body */
 .body {
  color: var(--title-text-color);
  font-family: 'Roboto', sans-serif;
- text-decoration: none;
- list-style: none;
  }
 
 /* Большие заголовки */
@@ -82,6 +90,7 @@
 .title-button {
     color: var(--page-color);
     background: var(--logo-color-web);
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -90,7 +99,7 @@
 
 /* изменение цвета кнопка */
 .title-button:hover,
-.title-button:focus {
+.title-button:active {
     color: var(--logo-color-web);
 }
 
@@ -124,22 +133,42 @@
     font-size: 16px;
     line-height: 1.19;
 }
-
+/* Должность */
+.text-team {
+    font-size: 16px;
+    line-height: 1.19;
+}
 /* футер почта/телефон */
 .kontakty {
-    color: var(--page-color);
     font-size: 14px;
     line-height: 2;
     background: var(--bg-title);
     list-style: none;
     text-decoration: none;
 }
+
+.page-kontakty {
+    color: var(--page-color);
+}
+
+.page-kontakty-link {
+    color: rgba(255, 255, 255, 0.6);
+}
 /* изменение цвета футер */
 .page-kontakty:hover,
-.page-kontakty:focus {
+.page-kontakty:active {
  color: var(--logo-color-web);
 }
 
 .page-kontakty .current {
+    color: var(--logo-color-web);
+}
+
+.page-kontakty-link:hover,
+.page-kontakty-link:active {
+ color: var(--logo-color-web);
+}
+
+ .page-kontakty-link .current {
     color: var(--logo-color-web);
 }
