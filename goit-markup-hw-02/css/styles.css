@@ -1,0 +1,142 @@
+:root {
+   --page-color: #FFFFFF;
+   --bg-title: #2F303A;
+   --text-color: #757575;
+   --title-text-color: #212121;
+   --logo-color-web:#2196F3;
+   --logo-color-studio:#000000;
+}
+
+ /* Логотип */
+.logo {
+    color: var(--logo-color-studio);
+    font-family: 'Raleway', cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+/* ccылки */
+.link {
+    text-decoration: none;
+    list-style: none;
+}
+ /* хеадер разделы */
+.site-navication {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* подчеркивание и точки */
+.list {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* изменение цвета хеадер разделы  */
+.page-shapka .link:hover,
+.page-shapka .link:focus {
+ color: var(--logo-color-web);
+}
+
+.page-shapka .link .current {
+    color: var(--logo-color-web);
+}
+
+/* хеадер почта/телефон */
+.list-navication {
+ color: var(--text-color);
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 1.14;
+ list-style: none;
+ text-decoration: none;
+}
+ 
+/* body */
+.body {
+ color: var(--title-text-color);
+ font-family: 'Roboto', sans-serif;
+ text-decoration: none;
+ list-style: none;
+ }
+
+/* Большие заголовки */
+.title {
+    color: var(--page-color);
+    background: var(--bg-title);
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+}
+
+/* кнопка */
+.title-button {
+    color: var(--page-color);
+    background: var(--logo-color-web);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    cursor: pointer;
+}
+
+/* изменение цвета кнопка */
+.title-button:hover,
+.title-button:focus {
+    color: var(--logo-color-web);
+}
+
+.title-button.current {
+    color: var(--logo-color-web);
+}
+
+/* Загаловки h3 */
+.title-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+/* абзацы после h3 */ 
+.text {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 2;
+  }
+ /* Заголовок h2 */
+  .title-foto {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.7;
+   text-align: center;
+  }
+    /* Команда ФИО */
+.team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* футер почта/телефон */
+.kontakty {
+    color: var(--page-color);
+    font-size: 14px;
+    line-height: 2;
+    background: var(--bg-title);
+    list-style: none;
+    text-decoration: none;
+}
+/* изменение цвета футер */
+.page-kontakty:hover,
+.page-kontakty:focus {
+ color: var(--logo-color-web);
+}
+
+.page-kontakty .current {
+    color: var(--logo-color-web);
+}
