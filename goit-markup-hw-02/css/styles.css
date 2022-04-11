@@ -16,6 +16,9 @@
     line-height: 1.2;
     text-decoration: none;
 }
+.logo span {
+    color: var(--logo-color-web);
+}
 
 /* ccылки */
 .link {
