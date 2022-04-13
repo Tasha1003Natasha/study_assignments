@@ -1,0 +1,227 @@
+:root {
+   --text-color: #757575;
+   --page-color: #FFFFFF;
+   --bg-title: #2F303A;
+   --accent: #212121;
+   --logo-color-web:#2196F3;
+   --logo-color-studio:#000000;
+}
+
+/* body */
+.body {
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    }
+
+ /* Логотип */
+.logo {
+    color: var(--logo-color-web);
+    font-family: 'Raleway', cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--logo-color-studio);
+}
+
+footer .logo span {
+    color: var(--page-color);
+}
+
+
+ /* хеадер разделы */
+.top-link {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* подчеркивание и точки */
+.list {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* изменение цвета хеадер разделы  */
+.top-link:hover,
+.top-link:focus {
+  color: var(--logo-color-web);
+}
+
+.current {
+  color: var(--logo-color-web);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+ color: var(--logo-color-web);
+}
+
+/* хеадер почта/телефон */
+.contacts-link {
+ color: var(--text-color);
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 1.14;
+ list-style: none;
+ text-decoration: none;
+}
+
+/* Главный заголовок */
+.title {
+    color: var(--page-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* кнопка */
+.caption {
+    text-align: center;
+    background: var(--bg-title);
+    width: 1600px;
+}
+
+.title-button {
+    color: var(--page-color);
+    background-color: var(--logo-color-web);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    cursor: pointer;
+}
+
+/* изменение цвета кнопки */
+.title-button:hover,
+.title-button:focus {
+    background-color:#188CE8;
+}
+
+/* Загаловки h3 */
+.title-text {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Скрытый заголовок */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+/* абзацы после h3 */ 
+.text {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+
+ /* Заголовок h2 */
+  .title-foto {
+   color: var(--accent);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.7;
+   text-align: center;
+  }
+    /* Команда ФИО */
+.team {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.team-section {
+    background: #F5F4FA;
+}
+/* Должность */
+.text-team {
+    font-size: 16px;
+    line-height: 1.19;
+}
+/* Футер */
+.footer {
+    background: #2F303A;
+}
+
+/* футер почта/телефон */
+.address  {
+    font-size: 14px;
+    line-height: 2;
+    background: var(--bg-title);
+    list-style: none;
+    color: currentColor;
+    font-style: normal;
+}
+
+.page-address {
+    color: var(--page-color);
+    text-decoration: none;
+}
+
+.page-address-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+/* изменение цвета футер */
+.page-address:hover,
+.page-address:focus {
+ color: var(--logo-color-web);
+}
+
+.page-address-link:hover,
+.page-address-link:focus {
+ color: var(--logo-color-web);
+}
+
+/* Портфолио */
+
+/* Загаловки */
+.subject {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+ /* Подзаголовок */
+.subtitle {
+    font-size: 16px;
+    line-height: 2;
+}
+
+/*  Список кнопок */
+.btn {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    cursor: pointer;
+    background: #F5F4FA;
+}
+/* изменение цвета кнопок */
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--logo-color-web); 
+    color: var(--page-color);
+}
