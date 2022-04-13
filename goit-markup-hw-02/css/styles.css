@@ -83,25 +83,26 @@ footer .logo span {
 }
 
 /* кнопка */
-.title-button {
-    color: var(--page-color);
-    background: var(--logo-color-web);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    cursor: pointer;
-}
 .caption {
     text-align: center;
     background: var(--bg-title);
     width: 1600px;
 }
 
-/* изменение цвета кнопка */
+.title-button {
+    color: var(--page-color);
+    background-color: var(--logo-color-web);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    cursor: pointer;
+}
+
+/* изменение цвета кнопки */
 .title-button:hover,
 .title-button:focus {
-    color:#188CE8;
+    background-color:#188CE8;
 }
 
 /* Загаловки h3 */
@@ -113,11 +114,27 @@ footer .logo span {
     text-transform: uppercase;
 }
 
+/* Скрытый заголовок */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
 /* абзацы после h3 */ 
 .text {
     font-size: 14px;
     line-height: 2;
   }
+
+
  /* Заголовок h2 */
   .title-foto {
    color: var(--accent);
