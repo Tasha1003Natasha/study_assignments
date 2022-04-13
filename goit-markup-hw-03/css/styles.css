@@ -21,6 +21,7 @@
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+    letter-spacing: 0.03em;
 }
 
 .logo span {
@@ -40,6 +41,7 @@ footer .logo span {
     line-height: 1.14;
     list-style: none;
     text-decoration: none;
+    letter-spacing: 0.02em;
 }
 
 /* подчеркивание и точки */
@@ -71,6 +73,7 @@ footer .logo span {
  line-height: 1.14;
  list-style: none;
  text-decoration: none;
+ letter-spacing: 0.02em;
 }
 
 /* Главный заголовок */
@@ -80,13 +83,14 @@ footer .logo span {
     font-size: 44px;
     line-height: 1.4;
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* кнопка */
 .caption {
     text-align: center;
     background: var(--bg-title);
-    width: 1600px;
 }
 
 .title-button {
@@ -97,6 +101,9 @@ footer .logo span {
     font-size: 16px;
     line-height: 1.9;
     cursor: pointer;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* изменение цвета кнопки */
@@ -111,6 +118,7 @@ footer .logo span {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em; 
     text-transform: uppercase;
 }
 
@@ -132,6 +140,7 @@ footer .logo span {
 .text {
     font-size: 14px;
     line-height: 2;
+    letter-spacing: 0.03em;
   }
 
 
@@ -142,6 +151,7 @@ footer .logo span {
    font-size: 36px;
    line-height: 1.7;
    text-align: center;
+   letter-spacing: 0.03em;
   }
     /* Команда ФИО */
 .team {
@@ -149,6 +159,7 @@ footer .logo span {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 .team-section {
     background: #F5F4FA;
@@ -157,10 +168,12 @@ footer .logo span {
 .text-team {
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 /* Футер */
 .footer {
     background: #2F303A;
+    width: 1200px;
 }
 
 /* футер почта/телефон */
@@ -171,6 +184,7 @@ footer .logo span {
     list-style: none;
     color: currentColor;
     font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 .page-address {
@@ -201,12 +215,14 @@ footer .logo span {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
  /* Подзаголовок */
 .subtitle {
     font-size: 16px;
     line-height: 2;
+    letter-spacing: 0.03em;
 }
 
 /*  Список кнопок */
@@ -217,6 +233,8 @@ footer .logo span {
     line-height: 1.7;
     cursor: pointer;
     background: #F5F4FA;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 /* изменение цвета кнопок */
 
@@ -224,4 +242,48 @@ footer .logo span {
 .btn:focus {
     background-color: var(--logo-color-web); 
     color: var(--page-color);
+}
+
+/*Блочная панель */
+
+/* Reset css */
+h1, h2, h3,p {
+    margin: 0;
+}
+
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 10px solid red;
+}
+
+img {
+    display: contents;
+    max-width: 100%;
+    height: auto;
+}
+ 
+/* Шапка */
+.logo {
+   margin-bottom: 24px;
+}
+
+  .top-link {
+    margin-bottom: 32px;
+  }
+  .contacts-link {
+    margin-bottom: 32px;
+  }
+
+   /* Секция с кнопкой  */
+   .section-caption {
+    padding-top: 200px; ;
+    padding-bottom: 200px;
+   }
+   
+.title-button {
+    margin-bottom: 30px;
 }
