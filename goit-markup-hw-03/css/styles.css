@@ -267,23 +267,3 @@ img {
 }
  
 /* Шапка */
-.logo {
-   margin-bottom: 24px;
-}
-
-  .top-link {
-    margin-bottom: 32px;
-  }
-  .contacts-link {
-    margin-bottom: 32px;
-  }
-
-   /* Секция с кнопкой  */
-   .section-caption {
-    padding-top: 200px; ;
-    padding-bottom: 200px;
-   }
-   
-.title-button {
-    margin-bottom: 30px;
-}
