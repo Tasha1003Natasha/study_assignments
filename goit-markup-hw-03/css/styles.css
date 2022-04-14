@@ -13,8 +13,43 @@
     font-family: 'Roboto', sans-serif;
     }
 
+    /*Блочная панель */
+
+/* Reset css */
+h1, h2, h3,p {
+    margin: 0;
+}
+
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ 
+/*  Хедер */
+.site-nav {
+    display: flex;
+}
+ /* Подводка убрать */
+.item {
+    outline: 1px  solid red;
+}
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
  /* Логотип */
 .logo {
+    margin-right: 94px;
     color: var(--logo-color-web);
     font-family: 'Raleway', cursive;
     font-weight: 700;
@@ -32,9 +67,12 @@ footer .logo span {
     color: var(--page-color);
 }
 
-
  /* хеадер разделы */
 .top-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--accent);
     font-weight: 500;
     font-size: 14px;
@@ -48,7 +86,10 @@ footer .logo span {
 .list {
     list-style: none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
+
 
 /* изменение цвета хеадер разделы  */
 .top-link:hover,
@@ -66,6 +107,21 @@ footer .logo span {
 }
 
 /* хеадер почта/телефон */
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item +.item {
+    margin-left: 52px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+
 .contacts-link {
  color: var(--text-color);
  font-weight: 500;
@@ -78,6 +134,15 @@ footer .logo span {
 
 /* Главный заголовок */
 .title {
+    outline: 1px  solid red;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    padding-bottom: 0;
+    outline: 1px  solid red;
+    
+
     color: var(--page-color);
     font-weight: 900;
     font-size: 44px;
@@ -91,9 +156,21 @@ footer .logo span {
 .caption {
     text-align: center;
     background: var(--bg-title);
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
 }
 
 .title-button {
+    display: inline-block;
+    border: var(--logo-color-web);
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin-bottom: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     color: var(--page-color);
     background-color: var(--logo-color-web);
     font-family: 'Roboto', sans-serif;
@@ -114,12 +191,28 @@ footer .logo span {
 
 /* Загаловки h3 */
 .title-text {
+    margin-top: 0;
+    margin-left:0 ;
+    margin-bottom: 10px;
+    
+
     color: var(--accent);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em; 
     text-transform: uppercase;
+}
+/* Секция с текстом */
+.text-section {	
+    display:flex;
+    flex-direction: row;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.text-section .benefits + .benefits {
+    margin-left: 30px;
 }
 
 /* Скрытый заголовок */
@@ -143,9 +236,23 @@ footer .logo span {
     letter-spacing: 0.03em;
   }
 
+/* Секция с фото */
+.foto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-bottom: 94px;
+    margin-right: auto;
+}
 
  /* Заголовок h2 */
   .title-foto {
+    margin: 0;
+    padding: 0px;
+    outline: 1px solid red;
+   
+
    color: var(--accent);
    font-weight: 700;
    font-size: 36px;
@@ -153,6 +260,8 @@ footer .logo span {
    text-align: center;
    letter-spacing: 0.03em;
   }
+
+
     /* Команда ФИО */
 .team {
     color: var(--accent);
@@ -163,6 +272,7 @@ footer .logo span {
 }
 .team-section {
     background: #F5F4FA;
+    display: block;
 }
 /* Должность */
 .text-team {
@@ -172,12 +282,25 @@ footer .logo span {
 }
 /* Футер */
 .footer {
+    display: flex;
+    flex-direction: column;
     background: #2F303A;
-    width: 1200px;
+    width: 1600px;
+}
+
+.footer-logo{
+margin-top: 60px;
+
+     
+}
+.address .item +.item {
+    margin-bottom: 9;
 }
 
 /* футер почта/телефон */
 .address  {
+    display: block;
+
     font-size: 14px;
     line-height: 2;
     background: var(--bg-title);
@@ -257,13 +380,23 @@ h1, h2, h3,p {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 10px solid red;
+  outline: 1px solid red;
 }
 
 img {
-    display: contents;
+    display: block;
     max-width: 100%;
     height: auto;
 }
  
 /* Шапка */
+.site-nav {
+    display: flex;
+}
+ /* Подводка убрать */
+.item {
+    outline: 1px  solid red;
+}
+.site-nav .item + .item {
+    margin-left: 50px;
+}
