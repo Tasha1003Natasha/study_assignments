@@ -188,6 +188,7 @@ footer .logo span {
     margin-top: 0;
     margin-left:0 ;
     margin-bottom: 10px;
+    margin-right: 0;
     
 
     color: var(--accent);
@@ -197,17 +198,20 @@ footer .logo span {
     letter-spacing: 0.03em; 
     text-transform: uppercase;
 }
-/* Секция с текстом */
-.blockquote {
-    padding: 94px 0;
-}
+ /* Секция с текстом */
+ .benefits {
+    width: 270px;
+ }
 
 .text-section {	
     display:flex;
+    justify-content: center;
+    padding: 94px 0;  
 }
 
 .text-section .benefits + .benefits {
-    margin-left: 30px;
+    margin-right: 30px;
+    margin-left: 0;
 }
 
 /* Скрытый заголовок */
