@@ -279,11 +279,11 @@ footer .logo span {
 }
 
 .group-mine {
-    margin-bottom: 30px;
     flex-basis:270px;
 }
 
 .team {
+    margin-top: 30px;
     margin-bottom: 10px;
 
     color: var(--accent);
