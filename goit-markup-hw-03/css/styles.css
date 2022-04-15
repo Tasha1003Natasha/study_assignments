@@ -51,6 +51,7 @@ img {
  /* Логотип */
 .logo {
     margin-right: 94px;
+
     color: var(--logo-color-web);
     font-family: 'Raleway', cursive;
     font-weight: 700;
@@ -136,12 +137,11 @@ footer .logo span {
 /* Главный заголовок */
 .title {
     outline: 1px  solid red;
-    width: 696px;
-    height: 120px;
     margin-top: 0;
     margin-bottom: 30px;
     outline: 1px  solid red;
     
+
     
 
     color: var(--page-color);
@@ -155,8 +155,10 @@ footer .logo span {
 
 /* кнопка */
 .caption {
-    box-sizing: content-box;
+    
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-top: 0px;
     margin-left: auto;
     margin-bottom: 0;
@@ -169,7 +171,7 @@ footer .logo span {
 
 .title-button {
     display: inline-block;
-    border: var(--logo-color-web);
+    border: transparent;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
