@@ -11,12 +11,14 @@
 .body {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
+    width: 1600px;
+    outline: 1px solid red;
     }
 
     /*Блочная панель */
 
 /* Reset css */
-h1, h2, h3,p {
+h1, h2, h3,p, li, ul{
     margin: 0;
     padding: 0;
 }
@@ -140,9 +142,9 @@ footer .logo span {
     margin-top: 0;
     margin-bottom: 30px;
     outline: 1px  solid red;
-    
-
-    
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--page-color);
     font-weight: 900;
@@ -155,7 +157,6 @@ footer .logo span {
 
 /* кнопка */
 .caption {
-    
     text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -211,12 +212,19 @@ footer .logo span {
     text-transform: uppercase;
 }
 /* Секция с текстом */
-.text-section {	
-    display:flex;
-    flex-direction: row;
-    margin-top: 94px;
-    margin-bottom: 94px;
+.blockquote {
+    padding: 94px 0;
 }
+
+.text-section {	
+    outline: 1px solid red;
+    display:flex;
+}
+
+.benefits {
+    outline: 1px  solid red;
+}
+
 
 .text-section .benefits + .benefits {
     margin-left: 30px;
@@ -243,20 +251,29 @@ footer .logo span {
     letter-spacing: 0.03em;
   }
 
+
+
 /* Секция с фото */
-.foto {
+.conteiner-foto {
+    padding: 94px 0;
+}
+
+.item-foto {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-bottom: 94px;
-    margin-right: auto;
+    justify-content:space-between;
+    flex-basis:370px;
+}
+
+.item-foto {
+    outline: 1px solid red;
 }
 
  /* Заголовок h2 */
   .title-foto {
-    margin: 0;
-    padding: 0px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-right: auto;
     outline: 1px solid red;
    
 
@@ -270,43 +287,82 @@ footer .logo span {
 
 
     /* Команда ФИО */
+.group {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.group-mine {
+    margin-bottom: 30px;
+    flex-basis:270px;
+}
+
 .team {
+    margin-bottom: 10px;
+
     color: var(--accent);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 .team-section {
+    display: flex;
+    padding: 94px 0; 
     background: #F5F4FA;
-    display: block;
+    width: 1600px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-right: auto;
 }
 /* Должность */
 .text-team {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 /* Футер */
 .footer {
+    outline: 1px solid red;
+    background: #2F303A;
+    width: 1600px;   
+}
+
+.page-footer {
+    width: 145px;
+    outline: 1px solid red;
     display: flex;
     flex-direction: column;
-    background: #2F303A;
-    width: 1600px;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-logo{
-margin-top: 60px;
-
-     
+.footer-logo {
+margin-top: 60px;  
+margin-bottom: 20px;   
 }
-.address .item +.item {
+
+
+.address .add + .add {
     margin-bottom: 9;
 }
 
 /* футер почта/телефон */
 .address  {
-    display: block;
+    display: flex;
+    width: 231px;
+    padding-bottom: 60px;
 
     font-size: 14px;
     line-height: 2;
@@ -336,6 +392,10 @@ margin-top: 60px;
 .page-address-link:focus {
  color: var(--logo-color-web);
 }
+
+
+
+
 
 /* Портфолио */
 
@@ -374,36 +434,4 @@ margin-top: 60px;
     color: var(--page-color);
 }
 
-/*Блочная панель */
 
-/* Reset css */
-h1, h2, h3,p {
-    margin: 0;
-}
-
-
-.conteiner {
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid red;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
- 
-/* Шапка */
-.site-nav {
-    display: flex;
-}
- /* Подводка убрать */
-.item {
-    outline: 1px  solid red;
-}
-.site-nav .item + .item {
-    margin-left: 50px;
-}
