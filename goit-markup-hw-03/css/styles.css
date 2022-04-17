@@ -37,6 +37,12 @@ img {
 }
  
 /*  Хедер */
+.header {
+    border-bottom: 1px;
+    color: #ECECEC;
+}
+
+
 .site-nav {
     display: flex;
 }
@@ -199,17 +205,20 @@ footer .logo span {
     text-transform: uppercase;
 }
  /* Секция с текстом */
+.section-text {
+    padding-top: 94px;
+}
+
  .benefits {
     width: 270px;
  }
 
-.text-section {	
+.section-benefits {	
     display:flex;
     justify-content: center;
-    padding: 94px 0;  
 }
 
-.text-section .benefits + .benefits {
+.section-benefits .benefits + .benefits {
     margin-right: 30px;
     margin-left: 0;
 }
@@ -242,10 +251,14 @@ footer .logo span {
     padding: 94px 0;
 }
 
-.item-foto {
+.site-foto {
     display: flex;
-    justify-content:space-between;
     flex-basis:370px;
+    text-align:center;
+}
+
+.site-foto .item-foto + .item-foto{
+   margin-left: 30px;
 }
 
 
@@ -266,10 +279,18 @@ footer .logo span {
 
 
     /* Команда ФИО */
+ .team-section {
+        padding: 94px 0; 
+        background: #F5F4FA;
+    }
+
 .group {
     display: flex;
-    align-content: space-around;
-    justify-content: space-between;
+    text-align: center;
+}
+
+.group .card + .card {
+  margin-left: 30px;
 }
 
 .card {
@@ -283,7 +304,6 @@ footer .logo span {
 }
 
 .team {
-    margin-top: 30px;
     margin-bottom: 10px;
 
     color: var(--accent);
@@ -293,40 +313,28 @@ footer .logo span {
     letter-spacing: 0.03em;
     text-align: center;
 }
-.team-section {
-    display: flex;
-    padding: 94px 0; 
-    background: #F5F4FA;
-    text-align: center;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-bottom: 0;
-    margin-right: auto;
-}
+
 /* Должность */
 .text-team {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 30px;
 }
+
+.text-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* Футер */
 .footer {
     padding: 60px 0;
     background: #2F303A;   
 }
 
-.page-footer {
-    width: 145px;
-    display: block;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
 .footer-logo {
-    display: block;
+   display: block;
    margin-top: 0;
    margin-bottom: 20px;   
 }
@@ -338,14 +346,9 @@ footer .logo span {
 
 /* футер почта/телефон */
 .address  {
-    display: flex;
-    width: 231px;
-
     font-size: 14px;
     line-height: 2;
-    background: var(--bg-title);
     list-style: none;
-    color: currentColor;
     font-style: normal;
     letter-spacing: 0.03em;
 }
@@ -383,6 +386,7 @@ footer .logo span {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
  /* Подзаголовок */
@@ -394,13 +398,13 @@ footer .logo span {
 
 /*  Список кнопок */
 .portfolio {
-    padding: 94px 0; 
+    padding: 94px 0;
 }
 
 .list-button {
     display: flex;
     justify-content: center;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 }
 
 .list-button .item-btn + .item-btn {
@@ -431,7 +435,13 @@ footer .logo span {
 
 /* Cписок карточек */
 .size {
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border-left: 32px;
+    border-bottom: 30px ;
+    border-right: 32px ;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
 
 .flex-conteiner {
@@ -443,10 +453,7 @@ footer .logo span {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
 }
 
 .element:nth-child(3n) {

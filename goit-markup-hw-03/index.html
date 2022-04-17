@@ -14,9 +14,9 @@
 
 <body class="body">
 <!-- Шапка -->
-    <header class="conteiner">
+    <header class="header">
 
-   <div class="main">
+   <div class="main conteiner">
           <a href="" class="logo">Web<span>Studio</span></a>
        
           <nav>
@@ -47,12 +47,12 @@
 
 <!-- Секция с текстом -->
 
-   <section>
+   <section class="section-text">
 
     <div class="conteiner">
     <h2 class="visually-hidden">Наши преимущества</h2>
 
-   <ul class="list text-section">
+   <ul class="list section-benefits">
    <li class="benefits">  
        <h3 class="title-text">Внимание к деталям</h3>
     <p class="text">
@@ -96,11 +96,17 @@
     <h2 class="title-foto">Чем мы занимаемся</h2>
 
       <ul class="list site-foto">
-          <li class="item-foto">
-        <img src="./images/box/box1.jpg" alt="клавиатура" width="370" height="294">
-        <img src="./images/box/box2.jpg" alt="телефон"  width="370" height="294">  
-        <img src="./images/box/box3.jpg" alt="планшет"  width="370" height="294"> 
-         </li>  
+
+    <li class="item-foto">
+        <img src="./images/box/box1.jpg" alt="клавиатура" width="370" height="294"></li>   
+
+    
+        <li class="item-foto">
+    <img src="./images/box/box2.jpg" alt="телефон" width="370" height="294"></li> 
+
+         <li class="item-foto">
+             <img src="./images/box/box3.jpg" alt="планшет"  width="370" height="294"></li>   
+       
     </ul>
 </div>
 </section>
@@ -108,36 +114,46 @@
 
 <!-- Команда -->
 
-<section class="team-section list">
+<section class="team-section">
     <div class="conteiner">
- <h2 class="title-foto">Наша команда</h2>
+ <h2 class="title-foto list">Наша команда</h2>
 
  <ul class="list group">
 
      <li class="card">
 <img class="group-mine" src="./images/team/productdesigner.jpg" alt="продакт" width="270" height="260"> 
+
+<div class="text-card">
 <h3 class="team">Игорь Демьяненко</h3>
 <p class="text-team">Product Designer</p>
+</div>
 </li>
 
 <li class="card">
 <img class="group-mine" src="./images/team/frontenddeveloper.jpg" alt="фронтенд" width="270" height="260">  
-   
+
+<div class="text-card">
 <h3 class="team">Ольга Репина</h3>
     <p class="text-team">Frontend Developer</p>
+</div>
 </li>
 
 <li class="card">
 <img class="group-mine" src="./images/team/marketing.jpg" alt="маркетинг" width="270" height="260"> 
-       
+
+<div class="text-card">
 <h3 class="team">Николай Тарасов</h3>
         <p class="text-team">Marketing</p>
+</div>
     </li>
 
     <li class="card">
         <img class="group-mine" src="./images/team/designer.jpg" alt="дизайнер" width="270" height="260">   
+
+        <div class="text-card">
           <h3 class="team">Михаил Ермаков</h3>
     <p class="text-team">UI Designer</p>  
+  </div>
         </li>
         </ul>
     </div>
@@ -149,13 +165,11 @@
       
         <div class="conteiner">
 
-    <div class="page-footer">
          <a href="" class="logo  footer-logo">Web<span>Studio</span></a>
-    </div>
-  
-    
+
+
             <address>
-                <ul class="address page-footer">
+                <ul class="address">
                 <li><a class="page-address ad" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
                 <li><a class="page-address-link ad" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="page-address-link ad" href="tel:+380961111111">+380961111111</a></li>
