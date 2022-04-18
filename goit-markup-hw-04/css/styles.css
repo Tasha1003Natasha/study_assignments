@@ -136,6 +136,12 @@ footer .logo span {
  letter-spacing: 0.02em;
 }
 
+/*  Иконки */
+/* .contacts-link::before {
+    color: var(--text-color);
+} */
+
+
 /* Главный заголовок */
 .title {
     margin-top: 0;
