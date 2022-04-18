@@ -38,8 +38,7 @@ img {
  
 /*  Хедер */
 .header {
-    border-bottom: 1px;
-    color: #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 
@@ -218,10 +217,14 @@ footer .logo span {
     justify-content: center;
 }
 
-.section-benefits .benefits + .benefits {
-    margin-right: 30px;
-    margin-left: 0;
+.benefits:last-child {
+    margin-right: 0;
 }
+
+.benefits:first-child {
+    margin-right: 30px;
+}
+
 
 /* Скрытый заголовок */
 .visually-hidden {
