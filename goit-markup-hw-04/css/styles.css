@@ -418,6 +418,7 @@ footer .logo span {
     justify-content: center;
     margin-top: 50px;
     list-style: none;
+   cursor: pointer;
 }
 
 .clients-item {
