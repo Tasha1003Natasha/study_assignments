@@ -41,6 +41,7 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 
+
 .site-nav {
     display: flex;
 }
@@ -110,8 +111,9 @@ footer .logo span {
 .contacts-link:focus {
  color: var(--logo-color-web);
 }
- /* Линия */
-.current::after {
+
+/* Линия */
+current::after {
     position: absolute;
     border-radius: 2px;
     display: block;
@@ -122,7 +124,6 @@ footer .logo span {
     height: 4px;
     background-color: var(--logo-color-web);
 }
-
 
 /* хеадер почта/телефон */
 .contacts {
@@ -141,6 +142,7 @@ footer .logo span {
 
 
 .contacts-link {
+ display: flex;
  color: var(--text-color);
  font-weight: 500;
  font-size: 14px;
@@ -148,6 +150,7 @@ footer .logo span {
  list-style: none;
  text-decoration: none;
  letter-spacing: 0.02em;
+ align-items: center;
 }
 
 /*  Иконки */
@@ -156,7 +159,7 @@ footer .logo span {
     display: inline-block;
     fill:currentColor;
     margin-right: 10px;
-
+    align-items: baseline;
 }
 
 
@@ -222,57 +225,6 @@ footer .logo span {
     background-color:#188CE8;
 }
 
-
-/* Модальное окно */
-
-/* Подложка  */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Окно */
-
-.modal {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    width: 528px;
-    min-height: 581px;
-
-    background-color: var(--page-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-/* Крестик */
-.modal-close-button {
-    position: absolute;  
-    background-color: var(--page-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    top: 8px;
-    right: 8px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-} 
-
-.modal-close-icon {
-    padding: 6px;
-}
-
-
 /* Загаловки h3 */
 .title-text {
     margin-top: 0;
@@ -312,18 +264,16 @@ footer .logo span {
 
 /* Иконки */
 .title-text-icon {
+    display: flex;
+    justify-content:center;
+    align-items: center;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
-    border-radius: 4px;
-    text-align: center;
+    border-radius: 4px; 
 }
 
-.text-icon {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 
 /* Скрытый заголовок */
 .visually-hidden {
@@ -426,7 +376,9 @@ footer .logo span {
 
 .text-card {
     padding-top: 30px;
+    padding-right: 32px;
     padding-bottom: 30px;
+    padding-left: 32px;
 }
 
 /* Иконки */
@@ -434,9 +386,7 @@ footer .logo span {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-left: 32px ;
+    margin-top: 16px;
 }
 
 .socials-item {
@@ -455,10 +405,12 @@ footer .logo span {
 }
 
 .socials-link {
-    display: block;
-    position: relative;
+    display: flex;
     fill: #AFB1B8;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .socials-link:hover,
@@ -483,7 +435,7 @@ footer .logo span {
     justify-content: center;
     margin-top: 50px;
     list-style: none;
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .clients-item {
@@ -495,11 +447,12 @@ footer .logo span {
 }
 
 .clients-icon {
-    display: block;
+    display: flex;
     fill: #AFB1B8;
-    padding: 16px 32px;
     width: 100%;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .clients-list .clients-item + .clients-item {
@@ -589,7 +542,9 @@ footer .logo span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--page-color);
+  margin-top: 0;
   margin-bottom: 20px;
+
 }
 
 
@@ -615,10 +570,12 @@ footer .logo span {
 }
 
 .socials-link-footer {
-    display: block;
-    position: relative;
-    fill:var(--page-color);
-    padding: 12px;
+    display: flex;
+    fill: var(--page-color);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .socials-link-footer:hover,
