@@ -127,6 +127,7 @@ footer .logo span {
 
 
 .contacts-link {
+ display: flex;
  color: var(--text-color);
  font-weight: 500;
  font-size: 14px;
@@ -142,7 +143,7 @@ footer .logo span {
     display: inline-block;
     fill:currentColor;
     margin-right: 10px;
-
+    align-items: baseline;
 }
 
 
@@ -247,18 +248,16 @@ footer .logo span {
 
 /* Иконки */
 .title-text-icon {
+    display: flex;
+    justify-content:center;
+    align-items: center;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
-    border-radius: 4px;
-    text-align: center;
+    border-radius: 4px; 
 }
 
-.text-icon {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 
 /* Скрытый заголовок */
 .visually-hidden {
@@ -361,7 +360,9 @@ footer .logo span {
 
 .text-card {
     padding-top: 30px;
+    padding-right: 32px;
     padding-bottom: 30px;
+    padding-left: 32px;
 }
 
 /* Иконки */
@@ -369,9 +370,7 @@ footer .logo span {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-left: 32px ;
+    margin-top: 16px;
 }
 
 .socials-item {
@@ -390,10 +389,12 @@ footer .logo span {
 }
 
 .socials-link {
-    display: block;
-    position: relative;
+    display: flex;
     fill: #AFB1B8;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .socials-link:hover,
@@ -524,7 +525,9 @@ footer .logo span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--page-color);
+  margin-top: 0;
   margin-bottom: 20px;
+
 }
 
 
@@ -550,10 +553,12 @@ footer .logo span {
 }
 
 .socials-link-footer {
-    display: block;
-    position: relative;
-    fill:var(--page-color);
-    padding: 12px;
+    display: flex;
+    fill: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .socials-link-footer:hover,
