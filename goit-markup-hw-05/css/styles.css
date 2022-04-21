@@ -5,6 +5,9 @@
    --accent: #212121;
    --logo-color-web:#2196F3;
    --logo-color-studio:#000000;
+   
+   /* Переход */
+   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* body */
@@ -61,14 +64,34 @@ img {
     line-height: 1.2;
     text-decoration: none;
     letter-spacing: 0.03em;
+
+    min-width:145px ;
 }
 
-.logo span {
+.logo .accent {
     color: var(--logo-color-studio);
 }
 
 footer .logo span {
     color: var(--page-color);
+}
+
+.anim-ls {
+    animation: logo 2s ease 1s backwards;
+}
+
+
+@keyframes logo {
+     0% {
+    opacity:0;
+    letter-spacing: -0.6em;
+    
+     }
+
+     100% {
+    opacity:1;
+    letter-spacing: 0.03em;
+     }
 }
 
  /* хеадер разделы */
@@ -84,6 +107,8 @@ footer .logo span {
     list-style: none;
     text-decoration: none;
     letter-spacing: 0.02em;
+
+    transition: color 250ms var(--timing-function);
 }
 
 /* подчеркивание и точки */
@@ -151,6 +176,9 @@ footer .logo span {
  text-decoration: none;
  letter-spacing: 0.02em;
  align-items: center;
+
+
+ transition: color 250ms var(--timing-function);
 }
 
 /*  Иконки */
@@ -216,75 +244,11 @@ footer .logo span {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    transition: background-color 250ms var(--timing-function);
+  
 }
 
-
-/* изменение цвета кнопки */
-.title-button:hover,
-.title-button:focus {
-    background-color:#188CE8;
-}
-
-/* Модальное окно */
-
-/* Подложка  */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.2);
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-/* Окно */
-.backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
-}
-
-
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    width: 528px;
-    min-height: 581px;
-
-    background-color: var(--page-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-
-    opacity: 1;
-    visibility: hidden;
-}
-
-/* Крестик */
-.modal-close-button {
-    position: absolute;  
-    background-color: var(--page-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    top: 8px;
-    right: 8px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-} 
-
-.modal-close-icon {
-    padding: 6px;
-}
 
 /* Загаловки h3 */
 .title-text {
@@ -301,6 +265,85 @@ footer .logo span {
     letter-spacing: 0.03em; 
     text-transform: uppercase;
 }
+
+/* изменение цвета кнопки */
+.title-button:hover,
+.title-button:focus {
+    background-color:#188CE8;
+}
+
+/* Модальное окно */
+
+/* Подложка  */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Окно */
+.backdrop.is-hidden {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.body.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 528px;
+    min-height: 581px;
+    
+    background-color: var(--page-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+/* Крестик */
+.modal-close-button {
+    position: absolute;  
+    background-color:transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+} 
+
+.modal-close-icon {
+    width: 100%;
+    height: 100%;
+} 
+
+
+/*  Анимация кнопки */
+
+
+
+
+
+
+
  /* Секция с текстом */
 .section-text {
     padding-top: 94px;
@@ -373,6 +416,30 @@ footer .logo span {
    margin-left: 30px;
 }
 
+/* Текст на фото*/
+.item-foto {
+    position: relative;
+}
+
+.item-foto > .text-foto {
+    position: absolute;
+    top: 224px;
+    right: 0;
+    left: 0;
+    margin: 0;
+    color: var(--page-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 27px 0;
+    background-color:  rgba(47, 48, 58, 0.8); 
+    cursor: pointer;
+}
+
+
 
  /* Заголовок h2 */
   .title-foto {
@@ -436,10 +503,7 @@ footer .logo span {
 }
 
 .text-card {
-    padding-top: 30px;
-    padding-right: 32px;
-    padding-bottom: 30px;
-    padding-left: 32px;
+    padding: 30px 32px;
 }
 
 /* Иконки */
@@ -455,6 +519,7 @@ footer .logo span {
     background-color: var(--page-color);
     width: 44px;
     height: 44px;
+    transition: background-color 250ms var(--timing-function);
 }
 
 .socials-list .socials-item + .socials-item {
@@ -472,6 +537,7 @@ footer .logo span {
     align-items: center;
     width: 100%;
     height: 100%;
+    transition: fill 250ms var(--timing-function);
 }
 
 .socials-link:hover,
@@ -505,6 +571,7 @@ footer .logo span {
    border-radius: 4px;
    width: 170px;
    height: 92px;
+   transition: border-color 250ms var(--timing-function);
 }
 
 .clients-icon {
@@ -514,6 +581,7 @@ footer .logo span {
     height: 100%;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms var(--timing-function);
 }
 
 .clients-list .clients-item + .clients-item {
@@ -563,12 +631,15 @@ footer .logo span {
 .page-address {
     color: var(--page-color);
     text-decoration: none;
+    transition: color 250ms var(--timing-function);
 }
 
 .page-address-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    transition: color 250ms var(--timing-function);
 }
+
 /* изменение цвета футер */
 .page-address:hover,
 .page-address:focus {
@@ -620,6 +691,7 @@ footer .logo span {
     background-color:rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
+    transition: background-color 250ms var(--timing-function);
 }
 
 .socials-list-footer .socials-item-footer + .socials-item-footer {
@@ -637,6 +709,7 @@ footer .logo span {
     align-items: center;
     width: 100%;
     height: 100%;
+    transition: fill 250ms var(--timing-function);
 }
 
 .socials-link-footer:hover,
@@ -698,6 +771,7 @@ footer .logo span {
     background: #F5F4FA;
     text-align: center;
     letter-spacing: 0.03em;
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 /* изменение цвета кнопок */
@@ -716,6 +790,9 @@ footer .logo span {
     border-right: 1px solid #EEEEEE;
     background: #FFFFFF;
     box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden ;
 }
 
 .flex-conteiner {
@@ -728,6 +805,7 @@ footer .logo span {
     margin-right: 30px;
     margin-bottom: 30px;
     background: #FFFFFF;
+    
 }
 
 .element:nth-child(3n) {
@@ -740,6 +818,9 @@ footer .logo span {
 /* Тень */
 .element-link {
     display: block;
+    position: relative;
+    overflow: hidden ;
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 .element-link:hover,
@@ -749,9 +830,35 @@ footer .logo span {
 
 .btn-link {
     display: block;
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 .btn-link:hover,
 .btn-link:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/*Анимация для карточки портфолио */
+.element-link > .element-text {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--page-color);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-function);
+}
+
+.element-link:hover .element-text,
+.element-link:focus .element-text {
+    transform: translateY(0);
+  }
+
+
