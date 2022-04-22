@@ -298,6 +298,7 @@ footer .logo span {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
+    z-index: 1;
 }
 
 .body.no-scroll {
