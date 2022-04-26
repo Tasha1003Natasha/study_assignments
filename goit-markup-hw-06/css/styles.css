@@ -318,7 +318,6 @@ footer .logo span {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    outline: 1px solid  red;
     padding: 40px;
 }
 
@@ -346,6 +345,8 @@ footer .logo span {
 
 /* Заголовок  */
 .title-modal {
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -354,14 +355,14 @@ footer .logo span {
     color: var(--accent);
 }
   /* Форма */
-.form {
+ .form {
     width: 448px;
     height: 342px;
     margin-top: 12px;
     margin-right: 0;
     margin-bottom: 20px;
     margin-left: 0;
-}
+} 
 
 /* Секция */
 .form-field {
@@ -371,56 +372,81 @@ footer .logo span {
     flex-direction: column;
     text-align: left;
     margin-bottom: 10px;
+    color: var(--text-color);
+}
 
+/* Строка */
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+} 
+
+/* Лейбл */
+.form-name {
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--text-color);
 }
-
-/*Строка  */
-
-.form-input {
-    width: 448px;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-/* Лейбл */
-.form-field label  {
-    margin-bottom: 4px;
-    height: 14px;
-}
 /* Иконки */
-
 .modal-icon {
    position: absolute;
    outline: 1px solid red;
-   
    display: inline-block;
-   color: var(--accent);
+   fill: var(--accent);
    text-align: center;
-   top: 11px ;
-   bottom: 11px;
-   left: 14px;
-   transform: translateY(100%);
-   transition: transform 250ms var(--timing-function);  
+   top: 30px ;
+   left: 14px; 
 }
+/*  Комменты */
+.comment {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;   
+} 
 
 /* Условия */
-.checkbox {
+.agreement {
     display: block;
     margin-bottom: 30px;
 }
+
+.agreement-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.agreement-link {
+    text-decoration-line: underline;
+    color: var(--logo-color-web);
+    text-underline-position: under;
+}
+
+/* Стили для checkbox */
+.modal-icon-checkbox {
+    display: inline-block;
+    border-color:var(--accent);
+}
+
+
+
 
 /* Кнопка формы */
 .form-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
-    display: inline-flex;
+    display: block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em; 
@@ -428,12 +454,16 @@ footer .logo span {
     color: var(--page-color);
     background-color:var(--logo-color-web);
     padding: 10px 55px ;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     border: transparent;
     cursor: pointer;
 }
 
- /* Секция с текстом */
+
+
+ /* Секция с текстом ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .section-text {
     padding-top: 94px;
 }
@@ -811,9 +841,65 @@ footer .logo span {
     background-color: var(--logo-color-web);
 }
 
+/* Форма футера */
+ .footer-form {
+    list-style: none;
+    margin-left: 93px;
+ }
+
+ .footer-form-input {
+     display: block;
+     width: 358px;
+     height: 50px;
+     font-size: 16px;
+     line-height: 20px;
+     letter-spacing: 0.03em;
+     color: rgba(255, 255, 255, 0.6);
+
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     box-sizing: border-box;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+     border-radius: 4px;
+     margin-bottom: 20px;
+     background-color: #2F303A;
+ }
+
+.footer-modal-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 
-/* Портфолио */
+.footer-form-button {
+    display: flex;
+    text-align: center;
+
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: var(--page-color);
+    background:var(--logo-color-web);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    padding-top: 10px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.footer-modal-icon {
+    outline: 1px solid red;
+    margin-left: 10px;
+    margin-right: 8px; 
+}
+
+
+/* Портфолио ////////////////////////////////////////////////////////////*/
 
 /* Загаловки */
 .subject {
@@ -949,5 +1035,4 @@ footer .logo span {
 .element-link:focus .element-text {
     transform: translateY(0);
   }
-
 

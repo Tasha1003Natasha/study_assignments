@@ -60,58 +60,59 @@
 
   <form class="modal">
 
- <h5 class="title-modal">Оставьте свои данные, мы вам перезвоним</h5>
+ <b class="title-modal">Оставьте свои данные, мы вам перезвоним</b>
 
 <div class="form">
 
-    <div class="form-field">
-     <label for="name">Имя</label>
+     <label class="form-field">
+       <span class="form-name">Имя</span>
     <input
     class="form-input"
-     type="text" name="name" id="name">
-
+     type="text" 
+     placeholder=" "
+     name="name" required>
      <svg class="modal-icon"  width="18" height="18">
       <use href="./images/icons.svg#icon-person-modal1"></use></svg>
+    </label>
 
-    </div>
-
-    <div class="form-field">
-    <label for="tel">Телефон</label>
+    <label class="form-field">
+      <span class="form-name">Телефон</span>
     <input 
     class="form-input"
-    type="tel" name="tel" id="tel">
-
+    type="tel"
+    placeholder=" "
+    name="tel" required>
     <svg class="modal-icon"  width="18" height="18">
       <use href="./images/icons.svg#icon-phone-modal2"></use></svg>
+    </label>
 
-    </div>
-
-     <div class="form-field">
-    <label for="mail">Почта</label>
+   
+    <label class="form-field">
+      <span class="form-name">Почта</span>
     <input 
     class="form-input"
-    type="email" name="mail" id="mail">
-
+    type="email"
+    placeholder=" "
+    name="mail" required>
     <svg class="modal-icon"  width="18" height="18">
       <use href="./images/icons.svg#icon-email-modal3"></use></svg>
+    </label>
+  
 
-    </div>
-
-    <div class="form-field">
-    <label for="comment">Комментарий</label>
+    <label class="form-field">
+      <span class="form-name">Комментарий</span>
     <textarea 
-    class="form-input"
-    name="comment" id="comment" placeholder="Введите текст" rows="120"></textarea>
-   </div>
-
-  </div>
+    class="comment"
+    name="comment"  placeholder="Введите текст" rows="5"></textarea>
+  </label>
     
-  <div class="checkbox">
-    <input type="checkbox"  name="policy" id="policy" />
-    <svg class="modal-icon"  width="16" height="15">
+
+  <label class="agreement">
+    <input type="checkbox"  name="checkbox"/>
+    <svg class="modal-icon-checkbox"  width="16" height="15">
       <use href="./images/icons.svg#icon-Vector-modal4"></use></svg>
-    <label for="policy">Соглашаюсь с рассылкой и принимаю<span>Условия договора</span></label>
-  </div>
+    <span class="agreement-text">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a></span>
+  </label>
    
 
     <button class="form-button" type="submit">Отправить</button>
@@ -123,10 +124,12 @@
      </svg>
    </button>
 
-     </form>
          </div>
 
+     </form>
+
         </div>
+      </div>
     </section>
  
 
@@ -627,8 +630,32 @@
 
                 </ul>
                 </div>
-              
+              <!-- Форма футер -->
 
+    
+              <form class="footer-form">
+
+                <h4 class="footer-next-title">Подпишитесь на рассылку</h4>
+               
+                <div class="footer-modal-section">
+
+                    <label>
+                   <input
+                   class="footer-form-input"
+                  type="email"
+                  placeholder="E-mail"
+                  name="mail" required>
+                </label>
+
+                  <button class="footer-form-button" type="submit">Подписаться
+                  <svg class="footer-modal-icon"  width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-footer-modal"></use></svg>
+                  </button>
+                
+                </div>
+
+                  </form>
+            
 
 </div>
     </footer>
