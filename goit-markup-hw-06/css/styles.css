@@ -443,8 +443,10 @@ footer .logo span {
 /* Условия */
 .agreement {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+
 }
 
 .agreement-text {
@@ -460,6 +462,7 @@ footer .logo span {
   color: var(--logo-color-web);
   text-underline-position: under;
 }
+
 
 /* Стили для checkbox */
 .custom-checkbox {
@@ -538,6 +541,7 @@ footer .logo span {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  padding: 25px 100px;
 }
 
 /* Скрытый заголовок */
