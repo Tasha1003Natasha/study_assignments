@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text-color: #757575;
   --page-color: #ffffff;
   --bg-title: #2f303a;
@@ -7,18 +7,18 @@
   --logo-color-studio: #000000;
 
   /* Переход */
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  /* --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}  */
 
 /* body */
-.body {
+/* .body {
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
   padding: 0;
-}
+} */
 
 /*Блочная панель */
-/*Reset css/////////////////////////Reset css/////////////////////////////////////// */
+/* Reset css/////////////////////////Reset css///////////////////////////////////////
 h1,
 h2,
 h3,
@@ -27,28 +27,28 @@ li,
 ul {
   margin: 0;
   padding: 0;
-}
+} */
 
-.conteiner {
+/* .conteiner {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-img {
+/* img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* подчеркивание и точки */
-.list {
+подчеркивание и точки */
+/* .list {
   list-style: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
-}
+} */
 
 
 
@@ -509,7 +509,7 @@ img {
 }
 
 /* Скрытый заголовок */
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -520,7 +520,7 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
 
 

@@ -1,0 +1,25 @@
+/*Reset css/////////////////////////Reset css/////////////////////////////////////// */
+h1,
+h2,
+h3,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* подчеркивание и точки */
+.list {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+  
