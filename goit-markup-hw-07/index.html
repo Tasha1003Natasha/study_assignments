@@ -12,57 +12,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="body">
-    <!-- Шапка -->
+    <!-- Header -->
     <header class="header">
-      <div class="main conteiner">
-        <a href="" class="logo"
-          ><span class="anim-ls">Web<span class="accent">Studio</span></span></a
-        >
+      <div class="conteiner header__conteiner">
 
-        <nav>
-          <ul class="site-nav list">
-            <li class="item">
-              <a class="top-link current" href="./index.html">Студия</a>
+       <a href="" class="logo header__logo">
+         <span class="logo logo--anim-ls">Web<span class="logo logo--accent-black">Studio</span></span></a>
+
+        <nav class="nav">
+          <ul class="nav__list list">
+
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./index.html">Студия</a>
             </li>
-            <li class="item">
-              <a class="top-link" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item"><a class="top-link" href="">Контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts list">
-          <li class="item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon-mail" width="16" height="12">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts_icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com</a>
           </li>
 
-          <li class="item">
-            <a class="contacts-link" href="tel:+380961111111">
-              <svg class="contacts-icon-tel" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use></svg
-              >+380961111111</a
-            >
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts_icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use></svg >+380961111111</a>
           </li>
         </ul>
       </div>
     </header>
 
-    <!-- Секция с кнопкой -->
+    <!-- Секция с кнопкой  /////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <main>
       <section class="caption">
         <div class="conteiner">
-          <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button class="title-button" type="button" data-modal-open>
+          <h1 class="caption__title">Эффективные решения для вашего бизнеса</h1>
+          <button class="caption__button" type="button" data-modal-open>
             Заказать услугу
           </button>
 
@@ -158,7 +159,7 @@
         </div>
       </section>
 
-      <!-- Секция с текстом -->
+       <!-- Секция с текстом ////////////////////////////////////////////////////////////////////////////////// -->
 
       <section class="section-text">
         <div class="conteiner">
@@ -231,7 +232,7 @@
       <!-- Секция с фото -->
       <section class="list conteiner-foto">
         <div class="conteiner">
-          <h2 class="title-foto">Чем мы занимаемся</h2>
+          <h2 class="clients__title">Чем мы занимаемся</h2>
 
           <ul class="list site-foto">
             <li class="item-foto">
@@ -271,7 +272,7 @@
 
       <section class="team-section">
         <div class="conteiner">
-          <h2 class="title-foto list">Наша команда</h2>
+          <h2 class="clients__title list">Наша команда</h2>
 
           <ul class="list group">
             <li class="card">
@@ -569,49 +570,50 @@
         </div>
       </section>
 
-      <!-- Секция клиенты -->
+       <!-- Секция клиенты /////////////////////////////////////////////////////////////////////////////////////////// -->
       <section class="clients">
         <div class="conteiner">
-          <h2 class="title-foto list">Постоянные клиенты</h2>
+          <h2 class="clients__title list">Постоянные клиенты</h2>
 
-          <ul class="clients-list">
-            <li class="clients-item">
-              <a class="clients-icon" href="/">
+          <ul class="clients__list">
+
+            <li class="clients__item">
+              <a class="clients__icon" href="/">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo"></use></svg
               ></a>
             </li>
 
-            <li class="clients-item">
-              <a class="clients-icon" href="/">
+            <li class="clients__item">
+              <a class="clients__icon" href="/">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-1"></use></svg
               ></a>
             </li>
 
-            <li class="clients-item">
-              <a class="clients-icon" href="/">
+            <li class="clients__item">
+              <a class="clients__icon" href="/">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-2"></use></svg
               ></a>
             </li>
 
-            <li class="clients-item">
-              <a class="clients-icon" href="/">
+            <li class="clients__item">
+              <a class="clients__icon" href="/">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-3"></use></svg
               ></a>
             </li>
 
-            <li class="clients-item">
-              <a class="clients-icon" href="/">
+            <li class="clients__item">
+              <a class="clients__icon" href="/">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-4"></use></svg
               ></a>
             </li>
 
-            <li class="clients-item">
-              <a class="clients-icon" href="/">
+            <li class="clients__item">
+              <a class="clients__icon" href="/">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-5"></use></svg
               ></a>
@@ -621,11 +623,13 @@
       </section>
     </main>
 
-    <!-- Футер -->
+ <!-- Футер///////////////////////////////////////////////// Футер ////////////////////////////////////////////////////////////////// -->
+
     <footer class="footer">
-      <div class="conteiner conteiner-footer">
-        <div class="footer-section">
-          <a href="" class="logo footer-logo">Web<span>Studio</span></a>
+      <div class="conteiner footer__conteiner">
+
+        <div class="footer__section">
+          <a href="" class="logo footer-logo">Web<span class="logo--accent-white">Studio</span></a>
 
           <address>
             <ul class="address">

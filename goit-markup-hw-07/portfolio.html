@@ -16,34 +16,42 @@
 <body class="body">
     <!-- Шапка -->
     <header class="header">
+      <div class="conteiner header__conteiner">
 
-        <div class="main conteiner">
-          <a href="" class="logo"><span class="anim-ls">Web<span class="accent">Studio</span></span></a>
-    
-            
-               <nav>
-             <ul class="site-nav list">
-              <li class="item"><a class="top-link" href="./index.html">Студия</a></li>
-              <li class="item"><a class="top-link current" href="./portfolio.html">Портфолио</a></li>
-              <li class="item"><a class="top-link" href="">Контакты</a></li>
-               </ul>
-             </nav>
-                 
-                  <ul class="contacts list">
-                 <li class="item">
-                     <a class="contacts-link" href="mailto:info@devstudio.com">
-                         <svg class="contacts-icon-mail"  width="16" height="12">
-                         <use href="./images/icons.svg#icon-mail"></use></svg>
-                         info@devstudio.com</a></li>
-     
-                 <li class="item">
-                     <a class="contacts-link" href="tel:+380961111111">
-     
-                         <svg class="contacts-icon-tel"  width="10" height="16">
-                     <use href="./images/icons.svg#icon-phone"></use></svg>+380961111111</a></li>
-                  </ul>
-             </div>
-         </header>
+       <a href="" class="logo header__logo">
+         <span class="logo logo--anim-ls">Web<span class="logo logo--accent-black">Studio</span></span></a>
+
+        <nav class="nav">
+          <ul class="nav__list list">
+
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts_icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts_icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use></svg >+380961111111</a>
+          </li>
+        </ul>
+      </div>
+    </header>
  <!-- Секция с кнопками -->
   <main>
       <section class="portfolio">
@@ -198,12 +206,10 @@
  <!-- Футер -->
 
  <footer class="footer">
-      
-    <div class="conteiner conteiner-footer">
+  <div class="conteiner footer__conteiner">
 
-        <div class="footer-section">
-
-     <a href="" class="logo footer-logo">Web<span>Studio</span></a>
+    <div class="footer__section">
+      <a href="" class="logo footer-logo">Web<span class="logo--accent-white">Studio</span></a>
 
 
         <address>
