@@ -53,17 +53,17 @@ ul {
 
 
 /* Header /////////////////////////////////////////////Header //////////////////////////////////*/
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
   .header__conteiner {
   display: flex;
   align-items: center;
-}
+} */
 
 /* Логотип */
-.logo {
+/* .logo {
   color: var(--logo-color-web);
   font-family: "Raleway", cursive;
   font-weight: 700;
@@ -102,14 +102,14 @@ ul {
     letter-spacing: 0.03em;
   }
 }
-
+ */
 
 /* хеадер разделы */
 
 
 /* Секция навигации */
 
-.nav__list {
+/* .nav__list {
   display: flex;
 }
 
@@ -145,7 +145,7 @@ ul {
 }
 
 /* Линия */
-.nav__link--current::after {
+/* .nav__link--current::after {
   position: absolute;
   border-radius: 2px;
   display: block;
@@ -155,7 +155,7 @@ ul {
   width: 100%;
   height: 4px;
   background-color: var(--logo-color-web);
-}
+} */ */
 
 /* хеадер почта/телефон */
 .contacts {

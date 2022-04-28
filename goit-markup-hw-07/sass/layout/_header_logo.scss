@@ -1,0 +1,36 @@
+.logo {
+    color: $logo-color-web;
+    font-family: "Raleway", cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    min-width: 145px;
+}
+  
+  &--accent-black{
+    color: $logo-color-studio;
+  }
+  
+  &--accent-white {
+    color: $page-color;
+  }
+  
+  &--anim-ls {
+    animation: logo 2s ease 1s backwards;
+  }
+  
+  @keyframes logo {
+    0% {
+      opacity: 0;
+      letter-spacing: -0.6em;
+    }
+  
+    100% {
+      opacity: 1;
+      letter-spacing: 0.03em;
+    }
+  }
+  
+  

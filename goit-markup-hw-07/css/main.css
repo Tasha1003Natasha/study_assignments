@@ -37,4 +37,64 @@ img {
   padding: 0;
   margin: 0;
 }
+
+.body {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+}
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #2196f3;
+  font-family: "Raleway", cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  min-width: 145px;
+}
+
+.header__logo {
+  margin-right: 94px;
+}
+
+.logo--accent-black {
+  color: #000000;
+}
+
+.logo--accent-white {
+  color: #ffffff;
+}
+
+.logo--anim-ls {
+  animation: logo 2s ease 1s backwards;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    letter-spacing: -0.6em;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0.03em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
