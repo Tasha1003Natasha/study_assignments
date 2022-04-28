@@ -1,0 +1,25 @@
+.caption__button {
+    display: inline-block;
+    border: transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: $page-color;
+    background-color: $logo-color-web;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    transition: background-color 250ms $timing-function;
+
+    /* изменение цвета кнопки */
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+  }
+}

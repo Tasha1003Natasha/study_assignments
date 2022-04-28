@@ -9,20 +9,28 @@
 @import "./base/base";
 
 
-// /////////////Component styles//////////////////////
 
 
-
-
-
-
-// /////////////Layout styles//////////////////////
+// /////////////Layout header //////////////////////
 @import "./layout/header";
 @import "./layout/header_logo";
 @import "./layout/nav";
+@import "./layout/contacts";
+
+
+// /////////////Component//////////////////////
+@import "./component/caption";
+@import "./component/caption__button";
+@import "./component/backdrop";
+@import "./component/modal";
+@import "./component/form";
+@import "./component/agreement";
+@import "./component/form_button";
 
 
 
 
 
-// /////////////Section components//////////////////////
+
+
+// /////////////Layout footer //////////////////////

@@ -1,0 +1,39 @@
+/* Условия */
+.agreement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    margin-left: 8px;
+  }
+}
+  .agreement-link {
+    text-decoration-line: underline;
+    color: $logo-color-web;
+    text-underline-position: under;
+  }
+  
+  .agreement-checkbox:checked + .custom-checkbox {
+    background-color: $logo-color-web;
+    border-color: transparent;
+  }
+  
+  /* Стили для checkbox */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid $accent;
+    transition: background-color 250ms $timing-function,
+    border-color 250ms $timing-function;
+  }
+  
