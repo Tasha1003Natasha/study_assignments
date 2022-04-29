@@ -1,6 +1,7 @@
 // /////////////Utils styles//////////////////////
 @import "./utils/variables";
-@import "./vendors/visually-hidden";
+@import "./utils/visually-hidden";
+@import "./utils/modern-normalize";
 
 // /////////////Base styles//////////////////////
 @import "./base/reset";
@@ -18,6 +19,7 @@
 @import "./layout/footer";
 
 // /////////////Component//////////////////////
+@import "./component/steyle";
 @import "./component/logo";
 @import "./component/backdrop";
 @import "./component/modal";
