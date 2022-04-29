@@ -1,0 +1,44 @@
+.socials-list-footer {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  & .socials-item-footer + .socials-item-footer {
+    margin-left: 10px;
+  }
+  
+}
+
+.socials-item-footer {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  transition: background-color 250ms $timing-function;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+
+  &:hover,
+  &:focus {
+  background-color: $logo-color-web;
+}
+
+}
+
+.socials-link-footer {
+  display: flex;
+  fill: $page-color;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+  fill: $page-color;
+  }
+}
+

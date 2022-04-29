@@ -1,31 +1,38 @@
 // /////////////Utils styles//////////////////////
-@import "./utils/vars";
+@import "./utils/variables";
 @import "./vendors/visually-hidden";
-
-
 
 // /////////////Base styles//////////////////////
 @import "./base/reset";
 @import "./base/base";
 
-
-
-
 // /////////////Layout header //////////////////////
 @import "./layout/header";
-@import "./layout/header_logo";
 @import "./layout/nav";
 @import "./layout/contacts";
-
+@import "./layout/section-caption";
+@import "./layout/section-benefits";
+@import "./layout/section-foto";
+@import "./layout/section-clients";
+@import "./layout/section-team";
+@import "./layout/footer";
 
 // /////////////Component//////////////////////
-@import "./component/caption";
-@import "./component/caption__button";
+@import "./component/logo";
 @import "./component/backdrop";
 @import "./component/modal";
 @import "./component/form";
 @import "./component/agreement";
-@import "./component/form_button";
+@import "./component/form-button";
+@import "./component/socials-link-team";
+@import "./component/footer-socials";
+@import "./component/list-button";
+@import "./component/page-element";
+
+
+
+
+
 
 
 

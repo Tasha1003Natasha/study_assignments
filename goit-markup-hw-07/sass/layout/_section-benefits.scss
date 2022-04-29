@@ -1,0 +1,62 @@
+.section-benefits {
+    padding-top: 94px;
+  }
+
+  /* Загаловки h3 */
+.title-text {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $accent;
+
+      /* Иконки */
+    &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    padding: 25px 100px;
+      }
+  }
+  
+  .page-benefits {
+    display: flex;
+    justify-content: center;
+        
+         /* абзацы после h3 */
+      &-text {
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 0.03em;
+     }
+  }
+
+
+  .benefits {
+    width: 270px;
+     
+       &:nth-child(-n + 3) {
+        margin-right: 30px;
+      }
+      
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+
+//   /* абзацы после h3 */
+.benefits-text {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+} 

@@ -1,0 +1,43 @@
+.section-foto {
+    padding: 94px 0;
+  }
+  
+  .site-foto {
+    display: flex;
+    flex-basis: 370px;
+    text-align: center;
+
+      & .item-foto + .item-foto {
+        margin-left: 30px;
+      }
+  }
+  
+  /* Текст на фото*/
+  .item-foto {
+    position: relative;
+
+         & > .text-foto {
+        position: absolute;
+        top: 224px;
+        right: 0;
+        left: 0;
+        margin: 0;
+        color: $page-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 27px 0;
+        background-color: rgba(47, 48, 58, 0.8);
+        cursor: pointer;
+      }
+
+  }
+
+  /* Заголовок h2 секция clients__title в след. секции */
+
+  
+  
+  

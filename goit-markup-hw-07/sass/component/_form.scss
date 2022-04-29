@@ -1,13 +1,13 @@
 .form {
-    width: 448px;
-    height: 342px;
-    margin-top: 12px;
-    margin-right: 0;
-    margin-bottom: 20px;
-    margin-left: 0;
-     
+  width: 448px;
+  height: 342px;
+  margin-top: 12px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+
   /* Секция */
-    &-field {
+  &-field {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,50 +15,52 @@
     margin-bottom: 10px;
     color: $text-color;
   }
-}
-  
-  /* Строка */
-  .form-input {
-    width: 100%;
-    min-height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    outline: transparent;
-    padding: 12px;
-    padding-left: 42px;
-    transition: border-color 250ms $timing-function;
-    cursor: pointer;
-   
-    .form-input:focus,
-    .form-input:hover {
-    border-color: $logo-color-web;
-     } 
-  }
-  
-  /* Лейбл */
-  .form-name {
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $text-color;
-  }
-  /* Иконки */
-  .form-icon {
-    position: absolute;
-    display: inline-block;
-    fill: $accent;
-    text-align: center;
-    top: 30px;
-    left: 12px;
-    right: 12px;
-    transition: fill 250ms $timing-function;
-  }
 
-.form-input:focus + .modal-icon,
-.form-input:hover + .modal-icon {
-  fill: $logo-color-web;
+   /* Лейбл */
+   &-name {
+   margin-bottom: 4px;
+   font-size: 12px;
+   line-height: 1.16;
+   letter-spacing: 0.01em;
+   color: $text-color;
+   }
+
+}
+
+/* Строка */
+.form-input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: transparent;
+  padding: 12px;
+  padding-left: 42px;
+  transition: border-color 250ms $timing-function;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    border-color: $logo-color-web;
+  }
+}
+
+/* Иконки */
+.form-icon {
+  position: absolute;
+  display: inline-block;
+  fill: $accent;
+  text-align: center;
+  top: 30px;
+  left: 12px;
+  right: 12px;
+  transition: fill 250ms $timing-function;
+
+  .form-input:focus + &,
+  .form-input:hover + & {
+    fill: $logo-color-web;
+  }
 }
 
 /*  Комменты */
@@ -77,8 +79,6 @@
 
   &:focus,
   &:hover {
-  border-color: $logo-color-web;
+    border-color: $logo-color-web;
+  }
 }
-}
-
-

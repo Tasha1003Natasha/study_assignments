@@ -5,6 +5,15 @@
     &__item:not(:first-child) {
     margin-left: 52px;
   }
+
+    /*  Иконки */
+    &_icon {
+    display: inline-block;
+    fill: currentColor;
+    margin-right: 10px;
+    align-items: baseline;
+  }
+  
 }
   
   .contacts__link {
@@ -24,12 +33,4 @@
     color: $logo-color-web;
   }
 }
-  
-  /*  Иконки */
-  .contacts_icon {
-    display: inline-block;
-    fill: currentColor;
-    margin-right: 10px;
-    align-items: baseline;
-  }
   
