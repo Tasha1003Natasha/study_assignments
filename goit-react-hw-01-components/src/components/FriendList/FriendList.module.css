@@ -1,10 +1,13 @@
 .friend_list {
+  padding: 20px 100px;
   display: flex;
   flex-basis: 3px;
   text-align: center;
   justify-content: center;
   margin-right: -30px;
   list-style: none;
+  background-color: yellow;
+  color: #1e90ff;
 }
 
 .item {

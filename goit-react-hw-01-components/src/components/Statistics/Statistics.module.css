@@ -1,0 +1,28 @@
+.statistics {
+  padding: 20px 100px;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 50px;
+  border-radius: 30%;
+  color: #1e90ff;
+}
+
+.stat_list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 20%;
+}
+
+.status {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
