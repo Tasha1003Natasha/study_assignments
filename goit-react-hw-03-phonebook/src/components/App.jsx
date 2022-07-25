@@ -16,6 +16,9 @@ export class App extends Component {
   }; 
 
 
+  /////////////////////////ДЗ №3////////////////////////////////////
+
+
 formSubmitHendler = contact => {
 
 const searchName = this.state.contacts
