@@ -6,7 +6,7 @@ import { fetchAddContact } from 'redux/contacts/contacts-operations';
 export const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  const { items } = useSelector(state => state);
+  const items = useSelector(state => state.contacts.items);
   const dispatch = useDispatch();
 
   const handleChange = event => {
