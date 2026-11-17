@@ -1,0 +1,53 @@
+/* Команда ФИО */
+.section-team  {
+    padding: 94px 0;
+    background: #f5f4fa;
+  }
+  
+  .group {
+    display: flex;
+    text-align: center;
+
+    & .card + .card {
+        margin-left: 30px;
+      }
+  }
+  
+
+  .card {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+    .card-mine {
+        flex-basis: 270px;
+      }  
+  }
+  
+
+  .team {
+    padding: 30px 32px;
+        
+        &-worker {
+        margin-bottom: 10px;
+        color: $accent;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-align: center;
+      }
+      
+        /* Должность */
+      &-text {
+      font-size: 16px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      text-align: center;
+     }
+
+  }
+ 
+ 
+  

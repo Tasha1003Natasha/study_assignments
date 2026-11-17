@@ -1,0 +1,45 @@
+// /////////////Utils styles//////////////////////
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/modern-normalize";
+
+// /////////////Base styles//////////////////////
+@import "./base/reset";
+@import "./base/base";
+
+// /////////////Layout header //////////////////////
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/contacts";
+@import "./layout/section-caption";
+@import "./layout/section-benefits";
+@import "./layout/section-foto";
+@import "./layout/section-clients";
+@import "./layout/section-team";
+@import "./layout/footer";
+
+// /////////////Component//////////////////////
+@import "./component/steyle";
+@import "./component/logo";
+@import "./component/backdrop";
+@import "./component/modal";
+@import "./component/form";
+@import "./component/agreement";
+@import "./component/form-button";
+@import "./component/socials-link-team";
+@import "./component/footer-socials";
+@import "./component/list-button";
+@import "./component/page-element";
+
+
+
+
+
+
+
+
+
+
+
+
+// /////////////Layout footer //////////////////////
