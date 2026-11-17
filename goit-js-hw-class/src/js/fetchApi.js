@@ -1,8 +1,8 @@
 // import axios from 'axios';
 import Notiflix from 'notiflix';
 
-const API_KEY = `28317427-cd386f88f666cbda8176ce58f`;
-const BASE_URL = `https://pixabay.com/api/`;
+const API_KEY = process.env.PIXABAY_API_KEY;
+const BASE_URL = process.env.PIXABAY_BASE_URL;
 
 
 // async

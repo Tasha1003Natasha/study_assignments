@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-const API_KEY = `28317427-cd386f88f666cbda8176ce58f`;
-const BASE_URL = `https://pixabay.com/api/`;
+const API_KEY = process.env.PIXABAY_API_KEY;
+const BASE_URL = process.env.PIXABAY_BASE_URL;
 
 export async function fetchEvents(keyword, page) {
   const params = new URLSearchParams({

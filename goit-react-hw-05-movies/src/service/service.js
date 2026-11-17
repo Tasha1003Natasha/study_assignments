@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const KEY_API = '7a4cd4317772102a9b88ef6a54b71590';
-const BASE_URL = 'https://api.themoviedb.org/3/';
+const KEY_API = process.env.REACT_APP_TMDB_API_KEY;
+const BASE_URL = process.env.REACT_APP_TMDB_BASE_URL;
 const defaultParams = {
   api_key: KEY_API,
 };

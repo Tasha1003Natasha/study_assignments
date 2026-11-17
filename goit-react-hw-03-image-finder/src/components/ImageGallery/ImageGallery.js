@@ -4,6 +4,9 @@ import '../styles.css';
 import { toast } from 'react-toastify';
 import { Loader } from '../Loader/Loader';
 
+const API_KEY = process.env.REACT_APP_PIXABAY_API_KEY;
+const BASE_URL = process.env.REACT_APP_PIXABAY_BASE_URL;
+
 const STATUS = {
   Idle: 'idle',
   Loading: 'loading',
@@ -28,7 +31,7 @@ export class ImageGallery extends Component {
       const { imageName } = this.props;
       this.setState({ status: STATUS.Loading });
       fetch(
-        `https://pixabay.com/api/?q=${imageName}&page=${this.state.page}&key=28317427-cd386f88f666cbda8176ce58f&image_type=photo&orientation=horizontal&per_page=12`
+        `${BASE_URL}?q=${imageName}&page=${this.state.page}&key=${API_KEY}&image_type=photo&orientation=horizontal&per_page=12`
       )
         .then(response => {
           if (response.ok) {
@@ -53,7 +56,7 @@ export class ImageGallery extends Component {
       page: prevState.page + 1,
     }));
     // fetch(
-    //   `https://pixabay.com/api/?q=${imageName}&page=${page}&key=28317427-cd386f88f666cbda8176ce58f&image_type=photo&orientation=horizontal&per_page=12
+    //   `${BASE_URL}?q=${imageName}&page=${page}&key=${API_KEY}&image_type=photo&orientation=horizontal&per_page=12
     //   }`
     // )
     //   .then(res => res.json())
