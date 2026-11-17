@@ -1,0 +1,27 @@
+.profile {
+  padding: 20px 100px;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 30px;
+  border-radius: 30%;
+  color: #1e90ff;
+}
+
+.stats {
+  margin: 10px 10px;
+  font-weight: 200px;
+  font-size: 30px;
+  text-align: center;
+  list-style: none;
+  color: #00008b;
+}
+
+.quantity {
+  color: #0000ff;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
