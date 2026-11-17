@@ -1,0 +1,79 @@
+/* @import-normalize; bring in normalize.css styles */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* padding: 20px 0;
+  min-height: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; */
+  /* background-image: url(./image.png); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  list-style: none; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* //////////////////////////////////////////// */
+.title {
+  color: #1e90ff;
+  font-size: 40px;
+}
+
+.active {
+  color: white;
+}
+
+.nav-privat {
+  color: white;
+}
+
+.contacts-list {
+  padding: 20px 0;
+  min-height: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  list-style: none;
+}
+
+.user__item {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.user__link {
+  color: white;
+}
+
+.home {
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./photo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title-home {
+  margin-top: 50px;
+  color: #0000cd;
+  font-size: 40px;
+  margin-left: 80px;
+}
