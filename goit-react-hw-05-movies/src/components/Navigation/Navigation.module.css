@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+}
+
+.nav_item {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.nav_link {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+  color: #0000ff;
+}
+
+.nav_link_active {
+  color: #0000ff;
+}

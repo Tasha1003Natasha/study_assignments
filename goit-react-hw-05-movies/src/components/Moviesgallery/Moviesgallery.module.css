@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 20px 0;
+  align-items: center;
+  margin-left: -40px;
+}
+
+.item {
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: blue;
+}
+
+.img_gallary {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+}
+
+.name {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center;
+  color: #303f9f; */
+  font-size: 20px;
+}
